@@ -1,4 +1,4 @@
-//made by Cranki
+//thanks for the template (cranki lg silas <3)
 
 var _app = function () {
     this.id = 0;

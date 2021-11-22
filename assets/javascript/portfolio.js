@@ -18,28 +18,31 @@ by Cranki who loves Cookies
     $(document).ready(function () {
         var links = [
             {
-                name: 'cranki',
-                link: 'rE3SJeDXrk'
+                name: 'silas',
+                link: 'gJgBbjmHjQ'
             },
                 
             {
-                name: 'pain',
-                link: 'rE3SJeDXrk'
+                name: 'luke',
+                link: 'gJgBbjmHjQ'
             },
                 
             {
-                name: 'ravage',
-                link: 'rE3SJeDXrk'
+                name: 'lejs',
+                link: 'gJgBbjmHjQ'
             },
 
             {
-                name: 'matze',
-                link: 'rE3SJeDXrk'
+                name: 'sewa',
+                link: 'gJgBbjmHjQ'
             },
 
             {
-                name: 'lumpi',
-                link: 'rE3SJeDXrk'
+                name: 'rae',
+                link: 'gJgBbjmHjQ'
+
+                name: 'nico',
+                link: 'gJgBbjmHjQ'
             },	
         ];
          
