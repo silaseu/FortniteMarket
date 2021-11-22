@@ -11,18 +11,18 @@ var _app = function () {
     this.shouldIgnoreVideo = false;
     this.effects = ["bounce", "flash", "pulse", "rubberBand", "shake", "swing", "tada", "wobble", "jello"];
     this.brandDescription = [
-        "Best Shop", 
-        "join hydro family", 
-        "https://discord.gg/gJgBbjmHjQ",
+        "All Inclusive Shop", 
+        "Cheapest Prices", 
+        "hhttps://discord.gg/hYTk4e5H",
         "🠕 click me 🠕", 
         "join hydro", 
-        "https://discord.gg/gJgBbjmHjQ",
+        "https://discord.gg/hYTk4e5H",
         "westside"
     ];
 
     this.titleChanger = function (text, delay) {
         text = text ||
-            ['Hydro Shop', 'Hydro Family', 'Hydro Shop', 'Hydro Family', 'gay shit'];
+            ['All Inclusive Shop.', 'Cheapest Prices', 'All Inclusive Shop.', 'Cheapest Prices', 'https://discord.gg/hYTk4e5H'];
         delay = delay || 2000;
 
         var counter = 0;

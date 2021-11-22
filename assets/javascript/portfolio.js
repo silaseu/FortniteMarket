@@ -18,28 +18,28 @@ by Cranki who loves Cookies
     $(document).ready(function () {
         var links = [
             {
-                name: 'cranki',
-                link: 'rE3SJeDXrk'
+                name: 'All Iclusive Shop',
+                link: 'hYTk4e5H'
             },
                 
             {
-                name: 'pain',
-                link: 'rE3SJeDXrk'
+                name: 'Silas',
+                link: 'hYTk4e5H'
             },
                 
             {
-                name: 'ravage',
-                link: 'rE3SJeDXrk'
+                name: 'Sewa',
+                link: 'hYTk4e5H'
             },
 
             {
-                name: 'matze',
-                link: 'rE3SJeDXrk'
+                name: 'Rae',
+                link: 'hYTk4e5H'
             },
 
             {
-                name: 'lumpi',
-                link: 'rE3SJeDXrk'
+                name: 'qodlyke',
+                link: 'hYTk4e5H'
             },	
         ];
          
