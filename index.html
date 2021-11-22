@@ -1,184 +1,94 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Typed.js - Type your heart out</title>
-  <script src="lib/typed.js" type="text/javascript"></script>
-  <script src="assets/demos.js"></script>
-  <link href="assets/demos.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <title>crmnl.pw</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="crmnl.pw - nicht criminal, sondern crmnl">
+    <meta name="keywords" content="crmnl.pw, crmnl, club, gtav, cheat, ragemp">
+    <meta name="author" content="cranki">
+    <meta property="og:type" content="site">
+    <meta property="og:title" content="crmnl.pw">
+    <meta property="og:description" content="crmnl.pw - nicht criminal, sondern crmnl">
+    <meta property="og:url" content="https://discord.com/invite/BRtCmQsbA3">
+    <meta property="og:image" content="assets/icons/crmnl.png">
+    <meta itemprop="name" content="crmnl.pw">
+    <meta itemprop="description" content="crmnl.pw - nicht criminal, sondern crmnl">
+    <meta itemprop="image" content="assets/icons/crmnl.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="shortcut icon" href="assets/icons/crmnl.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/stylesheet.css">
+    <link type="text/css" href="https://crmnl.pw/demo.css" rel="stylesheet">
 </head>
+
 <body>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
-<div class="wrap">
-  <h1 class="title">Typed.js</h1>
+    <a href="https://discord.com/invite/BRtCmQsbA3" class="button">discord</a>
 
-  <div class="links">
-    <a href="https://github.com/mattboldt/typed.js">GitHub</a> |
-    <a href="http://www.mattboldt.com/typed.js/docs">Documentation</a> |
-    <a href="http://www.mattboldt.com/demos/typed-js">View original demo</a> |
-    <a href="http://www.mattboldt.com">View mattboldt.com</a> |
-    <a href="https://twitter.com/atmattb">Complain to Matt about how awful this is</a>
-  </div>
-
-  <hr>
-
-  <h2 id="basic">Basic Demo</h2>
-  <div class="type-wrap">
-    <div id="typed-strings">
-      <span>Typed.js^10 is a <strong>JavaScript</strong> library.</span>
-      <p>It <em>types</em> out sentences.</p>
-      <p>And then deletes them.</p>
-      <p>Try it out!</p>
+    <div id="main">
+        <table class="box">
+        <tbody>
+            <tr><td><span id="line1" style="white-space:pre;"></span></td></tr>
+            <tr><td><span id="line2" style="white-space:pre;"></span></td></tr>
+            <tr><td><span id="line3 space" style="white-space:pre;"> </span></td></tr>
+            <tr><td><span id="line4" style="white-space:pre;"></span></td></tr>
+        </tbody>
+        </table>
     </div>
-    <span id="typed" style="white-space:pre;"></span>
-  </div>
-  <button class="toggle">Toggle</button>
-  <button class="start">Start</button>
-  <button class="stop">Stop</button>
-  <button class="reset">Reset</button>
-  <button class="destroy">Destroy</button>
-  <button class="loop">Toggle Loop</button>
 
-  <pre>
-    <code class="javascript">
-  var typed = new Typed("#typed", {
-    stringsElement: '#typed-strings',
-    typeSpeed: 0,
-    backSpeed: 0,
-    backDelay: 500,
-    startDelay: 1000,
-    loop: false,
-    onBegin: function(self) { prettyLog('onBegin ' + self) },
-    onComplete: function(self) { prettyLog('onCmplete ' + self) },
-    preStringTyped: function(pos, self) { prettyLog('preStringTyped ' + pos + ' ' + self); },
-    onStringTyped: function(pos, self) { prettyLog('onStringTyped ' + pos + ' ' + self) },
-    onLastStringBackspaced: function(self) { prettyLog('onLastStringBackspaced ' + self) },
-    onTypingPaused: function(pos, self) { prettyLog('onTypingPaused ' + pos + ' ' + self) },
-    onTypingResumed: function(pos, self) { prettyLog('onTypingResumed ' + pos + ' ' + self) },
-    onReset: function(self) { prettyLog('onReset ' + self) },
-    onStop: function(pos, self) { prettyLog('onStop ' + pos + ' ' + self) },
-    onStart: function(pos, self) { prettyLog('onStart ' + pos + ' ' + self) },
-    onDestroy: function(self) { prettyLog('onDestroy ' + self) }
-  });
-    </code>
-  </pre>
+    <div class="container" style="display: none;">
+        <h1 class="brand-header">
+            <a href="https://discord.com/invite/BRtCmQsbA3" target="_BLANK">crmnl.pw</a>
+        </h1>
+        
+        <p><span id="brand"></span></p>
+    </div>
 
+    <div class="marquee-container" style="visibility: hidden;">
+        <pre>|<div id="marquee"></div>|</pre>
+    </div>
+    
+    <div class="background" style="display: none;">
+        <div id="pattern"></div>
 
-  <hr>
+        <audio id="audio" loop="">
+            <source src="assets/others/video.mp4" type="audio/mp4">
+            <script>
+                var audio = document.getElementById("audio");
 
-  <h2 id="fade">Fade Out</h2>
-  <div class="type-wrap">
-    <span id="typed2" style="white-space:pre;"></span>
-  </div>
-  <button class="loop2">Toggle Loop</button>
+                app.audioElement = audio;
+                app.audioElement.volume = 0;
+            </script>
+        </audio>
 
-  <pre>
-    <code class="javascript">
-  var typed2 = new Typed('#typed2', {
-    strings: ['Some &lt;i&gt;strings&lt;/i&gt; with', 'Some &lt;strong&gt;HTML&lt;/strong&gt;', 'Chars &amp;times; &amp;copy;'],
-    typeSpeed: 0,
-    backSpeed: 0,
-    fadeOut: true,
-    loop: true
-  });
-    </code>
-  </pre>
+        <video id="background" loop="">
+            <source src="assets/others/video.mp4" type="video/mp4">
+            <script>
+                var video = document.getElementById("background");
 
-  <hr>
+                app.videoElement = video;
+                app.videoElement.volume = 0;
+            </script>
+        </video>
+    </div>
+	
+	<div class="bottom-left">
+		<i><a href="https://crmnl.international/" target="_BLANK">crmnl.international</a></i>
+	</div>
+	
 
-  <h2 id="smartBack">Smart Backspace</h2>
-  <div class="type-wrap">
-    <span id="typed3"></span>
-  </div>
+    <div class="footer">
+        <i><a href="https://crmnl.club" target="_BLANK">crmnl.club</a></i>
+    </div>
+	
 
-  <pre>
-    <code class="javascript">
-  var typed3 = new Typed('#typed3', {
-    strings: ['My strings are: &lt;i&gt;strings&lt;/i&gt; with', 'My strings are: &lt;strong&gt;HTML&lt;/strong&gt;', 'My strings are: Chars &amp;times; &amp;copy;'],
-    typeSpeed: 0,
-    backSpeed: 0,
-    smartBackspace: true, // this is a default
-    loop: true
-  });
-    </code>
-  </pre>
-
-  <hr>
-
-  <h2 id="input">In an input</h2>
-  <div class="type-wrap">
-    <input id="typed4" type="text" style="padding: 10px;">
-  </div>
-
-  <pre>
-    <code class="javascript">
-  var typed4 = new Typed('#typed4', {
-    strings: ['Some strings without', 'Some HTML', 'Chars'],
-    typeSpeed: 0,
-    backSpeed: 0,
-    attr: 'placeholder',
-    bindInputFocusEvents: true,
-    loop: true
-  });
-    </code>
-  </pre>
-
-  <hr>
-
-  <h2 id="shuffle">Shuffled</h2>
-  <div class="type-wrap">
-    <span id="typed5" style="white-space:pre;"></span>
-  </div>
-
-  <pre>
-    <code class="javascript">
-  var typed5 = new Typed('#typed5', {
-    strings: ['1 Some &lt;i&gt;strings&lt;/i&gt; with', '2 Some &lt;strong&gt;HTML&lt;/strong&gt;', '3 Chars &amp;times; &amp;copy;'],
-    typeSpeed: 0,
-    backSpeed: 0,
-    cursorChar: '_',
-    shuffle: true,
-    smartBackspace: false,
-    loop: true
-  });
-    </code>
-  </pre>
-
-  <hr>
-
-  <h2 id="bulk">Bulk Typing</h2>
-  <div class="type-wrap" style="height: 50px;">
-    <span id="typed6" style="white-space:pre;"></span>
-  </div>
-
-  <pre>
-    <code class="javascript">
-  var typed6 = new Typed('#typed6', {
-    strings: ['npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'],
-    typeSpeed: 40,
-    backSpeed: 0,
-    loop: true
-  });
-    </code>
-  </pre>
-
-
-</div>
-
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-11539016-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+	    
+    <script type="text/javascript" src="assets/javascript/lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/jquery.marquee.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/typed.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
 
 </body>
 </html>
