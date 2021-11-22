@@ -11,18 +11,18 @@ var _app = function () {
     this.shouldIgnoreVideo = false;
     this.effects = ["bounce", "flash", "pulse", "rubberBand", "shake", "swing", "tada", "wobble", "jello"];
     this.brandDescription = [
-        "meme necromancer", 
-        "join crmnl discord", 
-        "crmnl International", 
+        "Best Shop", 
+        "join hydro family", 
+        "https://discord.gg/gJgBbjmHjQ",
         "🠕 click me 🠕", 
-        "join 8888", 
-        "discord.gg/8888", 
-        "peacekeeper"
+        "join hydro", 
+        "https://discord.gg/gJgBbjmHjQ",
+        "westside"
     ];
 
     this.titleChanger = function (text, delay) {
         text = text ||
-            ['crmnl.pw', 'crmnl.cheat', 'crmnl.club', '8888', 'Enjoy the Music'];
+            ['Hydro Shop', 'Hydro Family', 'Hydro Shop', 'Hydro Family', 'gay shit'];
         delay = delay || 2000;
 
         var counter = 0;
