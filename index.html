@@ -97,79 +97,87 @@
     </script>
     <!-- /Chatra {/literal} -->
 
-    <!DOCTYPE html>
-
-    <!-- Coding By CodingNepal - youtube.com/codingnepal -->
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pure CSS Pricing Cards | CodingNepal</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    </head>
-    <body>
-        <div class="wrapper">
-            <input type="radio" name="slider" id="tab-1">
-            <input type="radio" name="slider" id="tab-2" checked>
-            <input type="radio" name="slider" id="tab-3">
-            <header>
-                <label for="tab-1" class="tab-1">Basic</label>
-                <label for="tab-2" class="tab-2">Standard</label>
-                <label for="tab-3" class="tab-3">Team</label>
-                <div class="slider"></div>
-            </header>
-            <div class="card-area">
-                <div class="cards">
-                    <div class="row row-1">
-                        <div class="price-details">
-                            <span class="price">19</span>
-                            <p>For beginner use</p>
-                        </div>
-                        <ul class="features">
-                            <li><i class="fas fa-check"></i><span>100 GB Premium Bandwidth</span></li>
-                            <li><i class="fas fa-check"></i><span>FREE 50+ Installation Scripts WordPress Supported</span></li>
-                            <li><i class="fas fa-check"></i><span>One FREE Domain Registration .com and .np extensions only</span></li>
-                            <li><i class="fas fa-check"></i><span>Unlimited Email Accounts & Databases</span></li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <div class="price-details">
-                            <span class="price">99</span>
-                            <p>For professional use</p>
-                        </div>
-                        <ul class="features">
-                            <li><i class="fas fa-check"></i><span>Unlimited GB Premium Bandwidth</span></li>
-                            <li><i class="fas fa-check"></i><span>FREE 200+ Installation Scripts WordPress Supported</span></li>
-                            <li><i class="fas fa-check"></i><span>Five FREE Domain Registration .com and .np extensions only</span></li>
-                            <li><i class="fas fa-check"></i><span>Unlimited Email Accounts & Databases</span></li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <div class="price-details">
-                            <span class="price">49</span>
-                            <p>For team collaboration</p>
-                        </div>
-                        <ul class="features">
-                            <li><i class="fas fa-check"></i><span>200 GB Premium Bandwidth</span></li>
-                            <li><i class="fas fa-check"></i><span>FREE 100+ Installation Scripts WordPress Supported</span></li>
-                            <li><i class="fas fa-check"></i><span>Two FREE Domain Registration .com and .np extensions only</span></li>
-                            <li><i class="fas fa-check"></i><span>Unlimited Email Accounts & Databases</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <button>Choose plan</button>
+    <div class="container mt-5">
+        <div class="form-group">
+            <select id="product-select" class="form-control custom-select">
+                <option value="0" disabled selected>Select Product</option>
+                <option value="sony">Sony 4K TV</option>
+                <option value="samsung">Samsung 4K TV</option>
+                <option value="vizio">Vizio 4K TV</option>
+                <option value="panasonic">Panasonic 4K TV</option>
+                <option value="phillips">Phillips 4K TV</option>
+            </select>
         </div>
-    </body>
-</html>
+        <div class="form-group">
+            <input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="Rate 1 - 5" disabled>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>4K Television</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="sony">
+                    <td>Sony 4K TV</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="samsung">
+                    <td>Samsung 4K TV</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="vizio">
+                    <td>Vizio 4K TV</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="panasonic">
+                    <td>Panasonic 4K TV</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="phillips">
+                    <td>Phillips 4K TV</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
 
     </div>
-<script type="text/javascript" src="assets/javascript/lib/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="assets/javascript/lib/jquery.marquee.min.js"></script>
-<script type="text/javascript" src="assets/javascript/lib/jquery.cookie.min.js"></script>
-<script type="text/javascript" src="assets/javascript/lib/typed.min.js"></script>
-<script type="text/javascript" src="assets/javascript/portfolio.js"></script>
-<div
+    <script type="text/javascript" src="assets/javascript/lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/jquery.marquee.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/typed.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
+    <div
 </body>
 </html>
