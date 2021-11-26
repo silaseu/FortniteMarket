@@ -1,21 +1,21 @@
 "use strict";
 
-document.addEventListener('DOMContentLoaded', () =>{
+document.addEventListener('DOMContentLoaded', () => {
 
     //header
 
     const header = document.querySelector('.header__top'),
-          intro = document.querySelector('.intro');
+        intro = document.querySelector('.intro');
 
     const headerheight = header.offsetHeight;
 
     window.addEventListener('scroll', () => {
         let scrollDistance = window.scrollY;
 
-        if(scrollDistance >= headerheight){
+        if (scrollDistance >= headerheight) {
             intro.style.marginTop = '0px';
             header.classList.add('header--fixed');
-        }else{
+        } else {
             intro.style.marginTop = '0px';
             header.classList.remove('header--fixed');
         }
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     //class
 
-    class products{
-        constructor(modal,img,alt,tovar,prise,...classes){
+    class products {
+        constructor(modal, img, alt, tovar, prise, ...classes) {
             this.modal = modal;
             this.img = img;
             this.alt = alt;
@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () =>{
             this.parent = document.querySelector('.section__block');
         }
 
-        render(){
+        render() {
             const element = document.createElement('div');
 
-            if(this.classes.length === 0){
+            if (this.classes.length === 0) {
                 this.classes = 'section__block-inner';
                 element.classList.add(this.classes);
-            }else{
+            } else {
                 this.classes.forEach(() => element.classList.add('section__block-inner'));
             }
 
@@ -80,15 +80,15 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     //tab
     const tab = document.querySelectorAll('.faq__block-inner-tab'),
-          tabContent = document.querySelectorAll('.faq__block-inner-content');
+        tabContent = document.querySelectorAll('.faq__block-inner-content');
 
 
-    tab.forEach((item,i) => {
+    tab.forEach((item, i) => {
         item.addEventListener('click', () => {
-            if(!tabContent[i].classList.contains('active') && !tab[i].classList.contains('active')){
+            if (!tabContent[i].classList.contains('active') && !tab[i].classList.contains('active')) {
                 tabContent[i].classList.add('active');
                 tab[i].classList.add('active');
-            }else{
+            } else {
                 tabContent[i].classList.remove('active');
                 tab[i].classList.remove('active');
             }
@@ -96,28 +96,28 @@ document.addEventListener('DOMContentLoaded', () =>{
     });
     //modal
     const modalOpen = document.querySelectorAll('[data-modal]'),
-          modal = document.querySelector('.modal'),
-          modalClose = document.querySelector('[data-close]'),
-          modaltwo = document.querySelector('.modal-two'),
-          modalOpenTwo = document.querySelectorAll('[data-modal-two]'),
-          modalCloseTwo = document.querySelector('[data-close-two]');
+        modal = document.querySelector('.modal'),
+        modalClose = document.querySelector('[data-close]'),
+        modaltwo = document.querySelector('.modal-two'),
+        modalOpenTwo = document.querySelectorAll('[data-modal-two]'),
+        modalCloseTwo = document.querySelector('[data-close-two]');
 
-    function showModal(){
+    function showModal() {
         modal.classList.add('show');
         document.body.style.overflow = 'hidden';
     }
 
-    function showModalTwo(){
+    function showModalTwo() {
         modaltwo.classList.add('show');
         document.body.style.overflow = 'hidden';
     }
 
-    function hideModal(){
+    function hideModal() {
         modal.classList.remove('show');
         document.body.style.cssText = '';
     }
 
-    function hideModalTwo(){
+    function hideModalTwo() {
         modaltwo.classList.remove('show');
         document.body.style.overflow = '';
     }
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     modal.addEventListener('click', (e) => {
         const target = e.target;
 
-        if( target === modal){
+        if (target === modal) {
             hideModal();
         }
     });
@@ -146,26 +146,26 @@ document.addEventListener('DOMContentLoaded', () =>{
     modaltwo.addEventListener('click', (e) => {
         const target = e.target;
 
-        if( target === modaltwo){
+        if (target === modaltwo) {
             hideModalTwo();
         }
     });
 
     //burger
     const burger = document.querySelector('.burger'),
-          nav = document.querySelector('.header__nav'),
-          burgerItem = document.querySelector('.burger__item'),
-          burgerLinks = document.querySelectorAll('.header__link');
+        nav = document.querySelector('.header__nav'),
+        burgerItem = document.querySelector('.burger__item'),
+        burgerLinks = document.querySelectorAll('.header__link');
 
 
-    function showBurger(){
+    function showBurger() {
         nav.classList.add('show');
         burgerItem.classList.add('show');
         burger.classList.add('show');
         document.body.style.overflow = 'hidden';
     }
 
-    function hideBurger(){
+    function hideBurger() {
         nav.classList.remove('show');
         burgerItem.classList.remove('show');
         burger.classList.remove('show');
@@ -176,16 +176,16 @@ document.addEventListener('DOMContentLoaded', () =>{
         item.addEventListener('click', (e) => {
             const target = e.target;
 
-            if(item === target){
+            if (item === target) {
                 hideBurger();
             }
         });
     });
 
     burger.addEventListener('click', () => {
-        if(!nav.classList.contains('show')){
+        if (!nav.classList.contains('show')) {
             showBurger();
-        }else{
+        } else {
             hideBurger();
         }
     });
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 
     //jivo
-    setTimeout(function(){
+    setTimeout(function() {
         var s = document.createElement('script');
         s.type = 'text/javascript';
         s.async = true;
