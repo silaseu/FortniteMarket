@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-vanitycheats.xyz	TRUE	/	FALSE	1999999999	xf_csrf	e3S5IF4twZMWs6ot
-
