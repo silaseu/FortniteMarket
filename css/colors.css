@@ -1,0 +1,149 @@
+.header-top-area,
+.hero-slider-1 .single-slide,
+.breadcrumb-area,
+.service-two .single-service::after,
+.footer-bg,
+.table thead tr {
+    background: linear-gradient(to right top, #ffcc00, #fcc300, #f9bb02, #f6b204, #f2aa07)
+}
+
+.main-menu ul li .sub-menu {
+    border-bottom: 2px solid #fc0
+}
+
+.header-right-wrap ul li a,
+.header-search-toggle i,
+.main-menu ul li.active a,
+.main-menu ul li:hover a,
+.main-menu ul li .sub-menu li>a:hover {
+    color: #fc0
+}
+
+.top-social-link ul li a:hover,
+.header-top-info ul li a:hover,
+.hero-slider-1 .single-slide .slider-text-info .slider-button .slider-btn:hover {
+    color: #000
+}
+
+.single-priceing .pricing-body {
+    background-color: #000;
+    color: #fff
+}
+
+.submit-form button.btn-yellow,
+.mobile-menu .mean-bar .mean-nav {
+    background-color: #fc0
+}
+
+.mobile-menu .mean-bar .mean-nav>ul li .sub-menu,
+.mobile-menu .mean-bar .mean-nav>ul li .mega-menu,
+.mobile-menu .mean-bar .mean-nav>ul li ul {
+    background-color: #f2aa07
+}
+
+#scrollUp,
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-bar,
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-bar::before,
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-bar::after,
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-close::before,
+.mobile-menu .mean-bar .meanmenu-reveal span.menu-close::after,
+.single-priceing .pricing-body {
+    background-color: #fff !important;
+    border: none
+}
+
+.plan-button a {
+    background-color: #000;
+    color: #fff
+}
+
+.domain-inner-bg {
+    background-size: cover;
+    background: #fc0
+}
+
+input[type=text],
+select,
+.contact-form-warp .input-box input,
+.contact-form-warp .input-box textarea,
+.contact-form-warp .input-box select,
+select.form-control:not([size]):not([multiple]) {
+    width: 100%;
+    padding: 8px;
+    font-weight: 400;
+    color: #000;
+    border: 1px solid #fc0;
+    border-radius: 4px;
+    background: #fff;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 50px
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background: #f7f4e7 !important
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #f4fafb;
+    box-shadow: none
+}
+
+.btn-primary:hover {
+    opacity: .7;
+    background-color: rgba(0, 0, 0, .72)
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #fc0;
+    background: #fc0
+}
+
+.ui-slider-pips [class*=ui-slider-pip-selected] {
+    color: #fc0
+}
+
+.ui-slider-pips [class*=ui-slider-pip-initial] {
+    font-weight: 400;
+    color: #999
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: 1px solid #000;
+    background: #000;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 0
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover,
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    border: 1px solid #fc0;
+    background: #fc0;
+    font-weight: 400;
+    color: #000
+}
+
+.text-black {
+    color: #000 !important
+}

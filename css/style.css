@@ -1,0 +1,332 @@
+.logo {
+    margin: 22px 0
+}
+
+.main-menu ul li a {
+    font-size: 17px !important
+}
+
+.spacer-75 {
+    height: 75px
+}
+
+.spacer-50 {
+    height: 50px
+}
+
+.spacer-25 {
+    height: 25px
+}
+
+.main-menu ul li ul.sub-menu li a {
+    font-size: 14px !important;
+    text-transform: none !important
+}
+
+@media only screen and (max-width:479px) {
+    .logo {
+        margin: 20px 0
+    }
+}
+
+.single-service.single-fix-height {
+    min-height: 23rem;
+    padding: 35px 30px
+}
+
+.single-service.fix-height {
+    height: 17rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.single-service.fix-height a,
+.single-service.fix-height a .service-icon {
+    max-height: 100%
+}
+
+.single-service.no-rotate .service-icon {
+    margin-bottom: 0
+}
+
+.single-service.no-rotate:hover .service-icon {
+    transform: rotateY(0)
+}
+
+.single-service.no-rotate .service-icon img {
+    max-height: 100%
+}
+
+h2.breadcrumb-title {
+    font-size: 4rem;
+    line-height: 65px
+}
+
+.breadcrumb-subtitle {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #fff
+}
+
+.testimonial-wrap .testimonial-image {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 35px
+}
+
+.testimonial-wrap .testimonial-image p {
+    font-size: 60px
+}
+
+.search-domain-form .domain-input {
+    padding-right: 85px
+}
+
+.header-top-info ul li {
+    font-size: 15px
+}
+
+.scrolldown-button {
+    position: relative;
+    margin-top: 20rem;
+    content: '';
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%)
+}
+
+.scrolldown-button a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font: normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+    padding-top: 60px
+}
+
+.scrolldown-button a:hover {
+    opacity: .5
+}
+
+.scrolldown-button a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box
+}
+
+@-webkit-keyframes sdb04 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0)
+    }
+    20% {
+        -webkit-transform: rotate(-45deg) translate(-10px, 10px)
+    }
+    40% {
+        -webkit-transform: rotate(-45deg) translate(0, 0)
+    }
+}
+
+@keyframes sdb04 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0)
+    }
+    20% {
+        transform: rotate(-45deg) translate(-10px, 10px)
+    }
+    40% {
+        transform: rotate(-45deg) translate(0, 0)
+    }
+}
+
+#cookieConsent {
+    background-color: #141414;
+    min-height: 26px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 8px 0 8px 30px;
+    font-family: trebuchet ms, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999
+}
+
+#cookieConsent a {
+    color: #4b8ee7;
+    text-decoration: none
+}
+
+#closeCookieConsent {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -30px 0 0;
+    font-weight: 700
+}
+
+#closeCookieConsent:hover {
+    color: #fff
+}
+
+#cookieConsent a.cookieConsentOK {
+    background-color: #f1d600;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px
+}
+
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #e0c91f
+}
+
+.dedicated-connected-inner-bg {
+    background-size: cover;
+    background: url(../img/better_avoro.jpg) no-repeat center !important
+}
+
+.info-feature-card .card {
+    padding: 20px 0
+}
+
+.info-feature-card h5 {
+    font-weight: 700;
+    font-size: 18px
+}
+
+.info-feature-card p {
+    color: #000
+}
+
+.info-feature-card img.card-img-top {
+    margin: 0 auto;
+    width: 70px
+}
+
+.video-slider {
+    position: relative
+}
+
+.video-slider.bg-overlay .video-background {
+    background: #000
+}
+
+.video-slider.bg-overlay .video-content {
+    width: 100%;
+    opacity: .3
+}
+
+.video-slider .video-content video {
+    width: 100%
+}
+
+.video-slider .slider-content {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    left: 0
+}
+
+.video-slider .slider-content h1,
+.video-slider .slider-content h2,
+.video-slider .slider-content h3,
+.video-slider .slider-content h4,
+.video-slider .slider-content h5 {
+    color: #fff
+}
+
+.video-slider .slider-content h1 {
+    font-size: 100px
+}
+
+.video-slider .slider-content h3 {
+    font-size: 30px
+}
+
+.video-slider ul.features {
+    list-style: none;
+    margin: 5rem auto 0
+}
+
+.video-slider ul.features li {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #fff
+}
+
+.video-slider .features i.yellow-icon {
+    color: #ffca08;
+    margin-right: 15px
+}
+
+.section-ptb .button-group-selector a.btn.btn-primary.active {
+    color: #000;
+    background-color: #f4fafb;
+    border-color: #f4fafb;
+    box-shadow: none
+}
+
+label {
+    font-weight: 700
+}
+
+select {
+    background-image: url(https://avoro.eu/img/drop-down-arrow.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: right 24px top 50%, 0 0 !important;
+    background-size: 16px 8px !important
+}
+
+.btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5
+}
+
+@media(min-width:1200px) {
+    .desktop-hidden {
+        display: none !important
+    }
+}
+
+@media(max-width:1199px) {
+    .video-slider .slider-content h1 {
+        font-size: 300%
+    }
+    .video-slider .slider-content h3 {
+        font-size: 200%
+    }
+    .mobile-hidden {
+        display: none !important
+    }
+}
+
+#container-form-dedicated-server-config h3 {
+    font-weight: 700
+}
