@@ -1,0 +1,339 @@
+* {
+    user-select: none;
+    overflow: hidden;
+}
+
+body {
+    background: rgb(10, 10, 10);
+}
+
+#topbar {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    width: 100%;
+    height: 2vw;
+    background: #8b34c9;
+}
+
+#topbar label {
+    position: absolute;
+    left: .5vw;
+    color: white;
+    font-family: monospace;
+    font-size: 0.8vw;
+    top: .45vw;
+}
+
+.fa-rotate-right {
+    position: absolute;
+    font-size: 0.9vw;
+    color: white;
+    right: .75vw;
+    top: .5vw;
+    transition: 1s;
+}
+
+.fa-rotate-right:hover {
+    color: rgb(76, 143, 243);
+    transform: rotate(360deg);
+}
+
+.fa-discord {
+    position: absolute;
+    font-size: 0.9vw;
+    color: white;
+    right: 2.25vw;
+    top: .5vw;
+    transition: 1s;
+}
+
+.fa-discord:hover {
+    color: rgb(76, 143, 243);
+    transform: rotate(360deg);
+}
+
+.fa-sun-bright {
+    position: absolute;
+    font-size: 0.9vw;
+    color: white;
+    right: 4vw;
+    top: .5vw;
+    transition: 1s;
+}
+
+.fa-sun-bright:hover {
+    color: rgb(76, 143, 243);
+    transform: rotate(360deg);
+}
+
+.fa-money-bills-simple {
+    position: absolute;
+    font-size: 0.9vw;
+    color: white;
+    right: 5.5vw;
+    top: .5vw;
+    transition: 1s;
+}
+
+.fa-money-bills-simple:hover {
+    color: rgb(76, 143, 243);
+    transform: rotate(360deg);
+}
+
+.topbarselectortab {
+    display: inline-block;
+    width: 7vw;
+    height: 2vw;
+    position: relative;
+    left: 8vw;
+    top: 0vw;
+    margin-right: 0vw;
+    background: transparent;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 0.8vw;
+    line-height: 2vw;
+}
+
+.topbarselectortab:hover {
+    background: #56207c;
+}
+
+#startseite {
+    position: absolute;
+    left: 2.5%;
+    width: 95%;
+    top: 7%;
+    height: 90%;
+    background: transparent;
+    border-radius: 0.3vw;
+    display: block;
+}
+
+.codeproof {
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    font-family: monospace;
+    font-size: 0.8vw;
+    color: white;
+}
+
+.codeproof2 {
+    position: absolute;
+    left: 1vw;
+    top: 8vw;
+    font-family: monospace;
+    font-size: 0.8vw;
+    color: white;
+}
+
+#ragemptab {
+    position: absolute;
+    left: 2.5%;
+    width: 95%;
+    top: 7%;
+    height: 90%;
+    background: transparent;
+    border-radius: 0.3vw;
+    display: none;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0vw;
+    height: 0vw;
+}
+
+.ragempscriptBox {
+    position: relative;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    left: 10vw;
+    top: 2vw;
+    width: 35vw;
+    height: 12.5vw;
+    background-color: #1b1c20;
+    border-radius: 3px;
+    word-break: break-all;
+    display: inline-block;
+    padding-left: 0.8vw;
+}
+
+.scriptpic {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    width: 40%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+    will-change: transform;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+.scriptowner {
+    position: absolute;
+    left: 15vw;
+    color: white;
+    font-family: monospace;
+    font-size: 0.9vw;
+    top: 1.5vw;
+}
+
+.scriptname {
+    position: absolute;
+    left: 15vw;
+    color: white;
+    font-family: monospace;
+    font-size: 0.9vw;
+    top: 3vw;
+}
+
+.scriptdate {
+    position: absolute;
+    left: 15vw;
+    color: white;
+    font-family: monospace;
+    font-size: 0.9vw;
+    top: 4.5vw;
+}
+
+.scriptdescription {
+    position: absolute;
+    left: 15vw;
+    color: white;
+    font-family: monospace;
+    font-size: 0.9vw;
+    top: 6vw;
+}
+
+.scriptdownloadbutton {
+    border: transparent;
+    position: absolute;
+    left: 21vw;
+    bottom: 1vw;
+    width: 7vw;
+    height: 2.5vw;
+    border-radius: 0.15vw;
+    background: #8b34c9;
+    color: white;
+    font-family: monospace;
+    font-size: 0.8vw;
+    transition: 1s;
+}
+
+.scriptdownloadbutton:hover {
+    background: #56207c;
+}
+
+#altvtab {
+    position: absolute;
+    left: 2.5%;
+    width: 95%;
+    top: 7%;
+    height: 90%;
+    background: transparent;
+    border-radius: 0.3vw;
+    display: none;
+    overflow: scroll;
+}
+
+#fivemtab {
+    position: absolute;
+    left: 2.5%;
+    width: 95%;
+    top: 7%;
+    height: 90%;
+    background: transparent;
+    border-radius: 0.3vw;
+    display: none;
+    overflow: scroll;
+}
+
+#partnertab {
+    position: absolute;
+    left: 2.5%;
+    width: 95%;
+    top: 7%;
+    height: 90%;
+    background: transparent;
+    border-radius: 0.3vw;
+    display: none;
+    overflow: scroll;
+    text-align: center;
+}
+
+.titleoftab {
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+#uberunstab {
+    position: absolute;
+    left: 2.5%;
+    width: 95%;
+    top: 7%;
+    height: 90%;
+    background: transparent;
+    border-radius: 0.3vw;
+    display: none;
+    overflow: scroll;
+    word-break: break-all;
+    padding-left: .5vw;
+    padding-right: 1vw;
+    text-align: center;
+}
+
+.partnerBox {
+    display: inline-block;
+    position: relative;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    left: 1vw;
+    top: 2vw;
+    width: 20vw;
+    height: 7.5vw;
+    background-color: #1b1c20;
+    border-radius: 3px;
+}
+
+.partnerBoxPB {
+    position: absolute;
+    left: 1vw;
+    top: 1.25vw;
+    border-radius: 1vw;
+    height: 5vw;
+}
+
+.partnerBoxName {
+    position: absolute;
+    color: white;
+    font-family: monospace;
+    font-size: 0.8vw;
+    left: 8vw;
+    top: 1.25vw;
+    font-weight: 300;
+}
+
+.partnerjoinbutton {
+    border: transparent;
+    position: absolute;
+    left: 9vw;
+    bottom: 1vw;
+    width: 7vw;
+    height: 2.5vw;
+    border-radius: 0.15vw;
+    background: #8b34c9;
+    color: white;
+    font-family: monospace;
+    font-size: 0.8vw;
+    transition: 1s;
+}
+
+.partnerjoinbutton:hover {
+    background: #56207c;
+}
