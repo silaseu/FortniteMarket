@@ -1,0 +1,58 @@
+.giftbox {
+    width: 447px;
+    height: 173px;
+    background: url(background_case.png);
+    position: relative;
+    overflow: hidden;
+    margin: 32px auto;
+}
+
+.giftbox>.onground {
+    width: 447px;
+    height: 173px;
+    background: url(onground.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.giftbox>.tape {
+    width: 5200px;
+    height: 173px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    position: relative;
+    font-size: 0;
+}
+
+.giftbox>.tape>div {
+    display: inline-block;
+    width: 141px;
+    height: 143px;
+    margin: 15px 4px;
+    background: #2D3035;
+}
+
+.giftbox>.tape>div>.image {
+    width: 141px;
+    height: 100px;
+    background: #2D3035;
+    text-align: center;
+}
+
+.giftbox>.tape>div>.image>img {
+    width: 100px;
+    height: 100px;
+}
+
+.giftbox>.tape>div>.info {
+    width: 141px;
+    height: 43px;
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #fff;
+    padding: 4px;
+    box-sizing: border-box;
+}

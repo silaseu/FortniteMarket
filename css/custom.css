@@ -1,0 +1,66 @@
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 3px 3px 3px 3px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    margin: 25px;
+}
+
+.info-msg {
+    color: #059;
+    background-color: #BEF;
+}
+
+.success-msg {
+    color: #270;
+    background-color: #DFF2BF;
+}
+
+.warning-msg {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+
+.error-msg {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.success-msgnew {
+    background-color: #222d56;
+    color: #e0d1ea;
+    margin: 1em auto;
+    padding: .75em 1.25em;
+    border: 1px solid #0f111d;
+    border-radius: .25em;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: e0d1ea;
+}
+
+#godly {
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #FF512F;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px #727309;
+    text-decoration: none;
+    background-image: url(/tools/imgs/sparkling.gif), linear-gradient(90deg, #f00 0%, #29ff00 100%, #fff);
+    animation: godlyanim 5s infinite linear
+}
+
+@keyframes godlyanim {
+    from {
+        filter: hue-rotate(-360deg)
+    }
+    to {
+        filter: hue-rotate(360deg)
+    }
+}
