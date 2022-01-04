@@ -1,0 +1,28 @@
+.back_to_top {
+    padding: 3px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    background-color: #183484;
+    border: 5px solid #00a5ff;
+    display: block;
+    z-index: 10
+}
+
+.back_to_top:hover {
+    cursor: pointer
+}
+
+.back_to_top span {
+    color: #fff;
+    font-size: 26px;
+    position: absolute;
+    top: -2px;
+    right: 6px
+}
